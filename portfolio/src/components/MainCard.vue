@@ -1,4 +1,5 @@
 <template>
+<div class="wrapper">
     <div class="main-container">
         <div class="container-one">
             <div class="profile">
@@ -40,7 +41,7 @@
             </div>
             <div class="button-container">
                 <div class="projects-button">
-                    <a href="">My Projects</a>
+                    <a href="#project-card">My Projects</a>
                 </div>
                 <div class="projects-button">
                     <a href="">My Resume</a>
@@ -48,6 +49,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -60,18 +62,22 @@ export default{
     img{
         height: 20px;
     }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
     
     .main-container{
         display: flex;
         flex-direction: row;
-        background-color: #cecece;
+        background-color: #A0d4ff;
         border-radius: 25px;
-        width: 70%;
-        margin-left: 15%;
+        width: 60%;
     }
 
     .container-one{
-        background-color: #ffb0b0;
+        background-color: #1292ee;
         padding: 2.5%;
         border-radius: 25px;
         width: 30%;
@@ -92,21 +98,22 @@ export default{
     }
 
     .container-two{
-        background-color: #cdc0fc;
         width: 70%;
         margin: 2.5%;
     }
 
     .about-me{
         text-align: left;
+        margin-top: 10%;
     }
 
-    .technologies-section p{
-        text-align: center;
+    .technology-section{
+        margin-top: 10%;
+        text-align: left;
     }
 
     .button-container{
-        margin-top: 5%;
+        margin-top: 50%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -114,7 +121,7 @@ export default{
     }
 
     .projects-button{
-        background-color: #7c58ff;
+        background-color: #005ca4;
         margin: 5px;
         padding: 5px;
         border-radius: 15px;
