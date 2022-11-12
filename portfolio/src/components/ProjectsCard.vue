@@ -5,7 +5,7 @@
                 <h2>{{projectData.ProjectsArray[index].Title}}</h2>
                 <p><b>About Project: </b> {{projectData.ProjectsArray[index].About}}</p>
                 <p><b>Technologies: </b> {{projectData.ProjectsArray[index].Technologies}}</p>
-                <a href="">Click here to go to "{{projectData.ProjectsArray[index].Title}}" repository. </a>
+                <a :href="projectData.ProjectsArray[index].Link"><img src="../assets/link.png"></a>
             </div>
         </div>
     </div>
@@ -22,25 +22,36 @@
         }
     }
 
-
+    
 </script>
   
 <style>    
 
+    
+
 
     .project-card{
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 4%;
+        padding: 10px;
         flex-wrap: 0 0 40%;
-        background-color: white;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 3rem;
-        padding: 1%;
+        background-color: #fff;
         border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .card-content{
         margin: 5%;
+    }
+
+    .card-content a{
+        text-decoration: none;
+    }
+
+    .card-content a img{
+        width: 2rem;
+        float: right;
     }
 </style>
   
