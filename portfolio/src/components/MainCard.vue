@@ -105,12 +105,13 @@ export default{
     .about-me{
         text-align: left;
         margin-top: 10%;
-        color: aliceblue;
+        color: #2c3e50;
     }
 
     .technology-section{
         margin-top: 10%;
         text-align: left;
+        color: #2c3e50;
     }
 
     .button-container{
@@ -130,7 +131,7 @@ export default{
 
     .projects-button a{
         text-decoration: none;
-        color: white;
+        color: #2c3e50;
         margin-bottom: 10px;
     }
 </style>
