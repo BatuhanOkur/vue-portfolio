@@ -1,11 +1,11 @@
 <template>
     <div class="project-div">
-        <div v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items" class="project-card">
+        <div v-for="(items) in projectData.ProjectsArray" v-bind:key="items" class="project-card">
             <div class="card-content">
-                <h2>{{ projectData.ProjectsArray[index].Title }}</h2>
-                <p><b>About Project: </b> {{ projectData.ProjectsArray[index].About }}</p>
-                <p><b>Technologies: </b> {{ projectData.ProjectsArray[index].Technologies }}</p>
-                <a :href="projectData.ProjectsArray[index].Link"><img src="../assets/link.png"></a>
+                <h2>{{ items.Title }}</h2>
+                <p><b>About Project: </b> {{ items.About }}</p>
+                <p><b>Technologies: </b> {{ items.Technologies }}</p>
+                <a :href="items.Link"><img src="../assets/link.png"></a>
             </div>
         </div>
     </div>
