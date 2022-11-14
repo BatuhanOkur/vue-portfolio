@@ -31,7 +31,7 @@
         <div class="container-two">
             <div class="about-me">
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Veniam eaque accusantium rerum deserunt adipisci praesentium sunt fugit dolores molestiae laboriosam. 
                     Veritatis corrupti accusantium assumenda vero, quas sunt commodi porro dolor.</p>
             </div>
@@ -105,6 +105,7 @@ export default{
     .about-me{
         text-align: left;
         margin-top: 10%;
+        color: aliceblue;
     }
 
     .technology-section{
